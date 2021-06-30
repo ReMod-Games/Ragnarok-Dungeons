@@ -1,4 +1,4 @@
-###### Pichu Read this otr die 
+###### Pichu Read this or die 
 ## Pichu Do not dare to change anything in the files without reading nextjs docs
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
