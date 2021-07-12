@@ -16,10 +16,10 @@ export default class TitleScreen extends Phaser.Scene
     }
 }
 
-const scale = 8
+const scale = 4
 const config = {
     type: Phaser.AUTO,
-    backgroundColor: '#010101',
+    backgroundColor: '#FF00FF',
     autoCenter: true,
     width: 240 * scale,
     height: 160 * scale,
