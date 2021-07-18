@@ -1,4 +1,5 @@
 import 'phaser'
+import { config } from '../RagnarokDungeonsGame';
 
 export default class TestScene extends Phaser.Scene
 {
@@ -12,9 +13,11 @@ export default class TestScene extends Phaser.Scene
 
     create() {
         // create things
+        config.backgroundColor = "#OWOWOWO"
     }
     
     update() {
         // update the frames
+        config.backgroundColor = "#OWOWOWO"
     }
 }

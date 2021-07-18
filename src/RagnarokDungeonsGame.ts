@@ -1,9 +1,12 @@
 import TestScene from "./scenes/TestScene";
 import TitleScreen from "./scenes/TitleScreen";
 
-export var gameMetaData: Phaser.Game = new Phaser.Game({
+export var sceneList = []
+sceneList.push(TitleScreen, TestScene)
+
+export var config = {
     type: Phaser.AUTO,
-    backgroundColor: '#A55A55',
+    backgroundColor: "#EAEAEA",
     width: 240,
     height: 160,
     scale: {
@@ -11,7 +14,10 @@ export var gameMetaData: Phaser.Game = new Phaser.Game({
         autoCenter: Phaser.Scale.Center.CENTER_BOTH
     },
     scene: sceneList 
-})
+}
 
-export var sceneList = []
-sceneList.push(TitleScreen, TestScene)
+let gameMetaData: Phaser.Game = new Phaser.Game(config)
+
+setTimeout(function(){
+    config.backgroundColor = "#OWOWOWO"
+}, 400)
