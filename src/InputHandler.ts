@@ -19,7 +19,7 @@ export function isKeyPressed(keyCode:number):boolean {
 
 //Gamepad
 
-let gamepads: Gamepad[] = new Gamepad[4];
+export let gamepads: Gamepad[] = new Gamepad[4];
 
 window.addEventListener("gamepadconnected", gamepad => {
     gamepads[gamepad.gamepad.id] = gamepad.gamepad;
