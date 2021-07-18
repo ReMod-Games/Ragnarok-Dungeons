@@ -1,3 +1,5 @@
+//keyboard
+
 document.addEventListener("keydown", key => {changeKey(key, true)});
 document.addEventListener("keyup",   key => {changeKey(key,false)});
 
@@ -14,3 +16,15 @@ export function isKeyPressed(keyCode:number):boolean {
     
     return pressedKeys[keyCode];
 }
+
+//Gamepad
+
+let gamepads: Gamepad[] = new Gamepad[4];
+
+window.addEventListener("gamepadconnected", gamepad => {
+    gamepads[gamepad.gamepad.id] = gamepad.gamepad;
+});
+
+window.addEventListener("gamepaddisconnected",gamepad => {
+    gamepads[gamepad.gamepad.id] = null;
+});
