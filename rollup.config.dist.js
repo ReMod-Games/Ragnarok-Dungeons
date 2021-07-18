@@ -8,7 +8,7 @@ export default {
 
     //  Our games entry point (edit as required)
     input: [
-        './src/game.ts'
+        './src/RagnarokDungeonsGame.ts'
     ],
 
     //  Where the build file is to be generated.
