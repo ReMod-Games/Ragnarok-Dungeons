@@ -12,7 +12,7 @@ export default class TestScene extends Phaser.Scene {
 
     create() {
         // create things
-        config.backgroundColor = "#OWOWOWO"
+        config.backgroundColor = "#OWOWOWO";
     }
     
     update() {
