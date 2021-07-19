@@ -1,3 +1,4 @@
+import { Game } from "phaser";
 import TestScene from "./scenes/TestScene";
 import TitleScreen from "./scenes/TitleScreen";
 
@@ -16,8 +17,8 @@ export var config = {
     scene: sceneList 
 }
 
-let gameMetaData: Phaser.Game = new Phaser.Game(config)
+export let gameMetaData: Phaser.Game = new Phaser.Game(config)
 
-setTimeout(function(){
+setTimeout(()=>{
     config.backgroundColor = "#OWOWOWO"
 }, 400)

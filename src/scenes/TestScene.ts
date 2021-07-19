@@ -1,8 +1,7 @@
 import 'phaser'
-import { config } from '../RagnarokDungeonsGame';
+import {gameMetaData, config} from '../RagnarokDungeonsGame';
 
-export default class TestScene extends Phaser.Scene
-{
+export default class TestScene extends Phaser.Scene {
     constructor() {
         super('TestScene');
     }
