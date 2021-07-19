@@ -15,9 +15,10 @@ export default class TestScene extends Phaser.Scene {
         config.backgroundColor = "#OWOWOWO";
         
         let testMap = this.make.tilemap({key:"testMap"});
-        let tiles = testMap.addTilesetImage("tile","pgmart");
+        let tiles = testMap.addTilesetImage("programmerArtTileset","pgmart");
 
-        testMap.createLayer("Tile Layer 1",tiles);
+        testMap.createLayer("Ground",tiles);
+        testMap.createLayer("Walls",tiles);
 
         this.input.on('pointerdown', this.changeScene);
     }

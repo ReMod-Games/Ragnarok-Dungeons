@@ -3,18 +3,29 @@ export let map = { "compressionlevel":-1,
    {
     "export":
        {
-        "format":"js",
-        "target":"untitled.ts"
+        "format":"js"
        }
    },
 "height":8,
 "infinite":false,
 "layers":[
        {
-        "data":[3, 3, 3, 3, 3, 3, 3, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         "height":8,
         "id":1,
-        "name":"Tile Layer 1",
+        "name":"Ground",
+        "opacity":1,
+        "type":"tilelayer",
+        "visible":true,
+        "width":8,
+        "x":0,
+        "y":0
+       }, 
+       {
+        "data":[3, 3, 3, 3, 3, 3, 3, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "height":8,
+        "id":2,
+        "name":"Walls",
         "opacity":1,
         "type":"tilelayer",
         "visible":true,
@@ -22,7 +33,7 @@ export let map = { "compressionlevel":-1,
         "x":0,
         "y":0
        }],
-"nextlayerid":2,
+"nextlayerid":3,
 "nextobjectid":1,
 "orientation":"orthogonal",
 "renderorder":"right-down",
@@ -32,11 +43,11 @@ export let map = { "compressionlevel":-1,
        {
         "columns":2,
         "firstgid":1,
-        "image":"assets/programmerart.png",
+        "image":"assets/programmerArtTileset.png",
         "imageheight":32,
         "imagewidth":32,
         "margin":0,
-        "name":"tile",
+        "name":"programmerArtTileset",
         "spacing":0,
         "tilecount":4,
         "tileheight":16,
