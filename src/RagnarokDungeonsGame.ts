@@ -19,6 +19,19 @@ export var config = {
 
 export let gameMetaData: Phaser.Game = new Phaser.Game(config);
 
+export function PhaserColorFromHex(hex:string):Phaser.Display.Color {
+    if (hex[0] == "#")
+        hex = hex.substr(1);
+    
+    let colors: string[] = hex.match(/.{1,2}/g); //cursed string shit don't @ me
+    
+    let r:number = parseInt(colors[0],16);
+    let g:number = parseInt(colors[1],16);
+    let b:number = parseInt(colors[2],16);
+
+    return new Phaser.Display.Color(r,g,b,255);
+}
+
 setTimeout(()=>{
     config.backgroundColor = "#OWOWOWO"
 }, 400);

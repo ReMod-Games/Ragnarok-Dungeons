@@ -9,6 +9,7 @@ export default class TitleScreen extends Phaser.Scene {
 
     preload() {
         this.load.image("placehold","assets/placeholder.png");
+        this.load.image("placehold_sml", "assets/placeholder-small.png");
 
         this.load.image("pgmart", "assets/programmerart.png");
         this.load.tilemapTiledJSON("testMap",map);

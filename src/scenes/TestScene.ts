@@ -1,7 +1,10 @@
 import 'phaser'
-import {gameMetaData, config} from '../RagnarokDungeonsGame';
+import {PhaserColorFromHex, config} from '../RagnarokDungeonsGame';
 
 export default class TestScene extends Phaser.Scene {
+    testSprite!: Phaser.Physics.Arcade.Sprite;
+    cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
+
     constructor() {
         super('TestScene');
     }
@@ -11,6 +14,7 @@ export default class TestScene extends Phaser.Scene {
     }
 
     create() {
+        this.cursors = this.input.keyboard.createCursorKeys();
         // create things
         config.backgroundColor = "#OWOWOWO";
         
@@ -18,9 +22,19 @@ export default class TestScene extends Phaser.Scene {
         let tiles = testMap.addTilesetImage("programmerArtTileset","pgmart");
 
         testMap.createLayer("Ground",tiles);
-        testMap.createLayer("Walls",tiles);
-
+        let collide = testMap.createLayer("Walls",tiles);
+        collide.setCollisionByProperty({collides:true});
+        
+        let testGraphic = this.add.graphics().setAlpha(0.75);
+        collide.renderDebug(testGraphic, {
+            tileColor: null,
+            collidingTileColor: PhaserColorFromHex("#00FF00"),
+            faceColor: PhaserColorFromHex("#008800")
+        });
         this.input.on('pointerdown', this.changeScene);
+
+        this.testSprite = this.physics.add.sprite(30,30,"placehold_sml");
+        
     }
 
     changeScene() {
@@ -29,6 +43,12 @@ export default class TestScene extends Phaser.Scene {
     
     update() {
         // update the frames
-        config.backgroundColor = "#OWOWOWO"
+        config.backgroundColor = "#OWOWOWO";
+        
+        let xOff = this.cursors.left? -1: this.cursors.right? 1: 0;
+        let yOff = this.cursors.up? -1: this.cursors.down? 1: 0;
+
+        let angle = Math.atan2(yOff,xOff);
+        this.testSprite.setAngle(angle);
     }
 }
