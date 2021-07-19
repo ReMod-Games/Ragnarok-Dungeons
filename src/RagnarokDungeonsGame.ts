@@ -11,7 +11,7 @@ export var config = {
     width: 240,
     height: 160,
     scale: {
-        zoom: 1,
+        zoom: 4,
         autoCenter: Phaser.Scale.Center.CENTER_BOTH
     },
     scene: sceneList 
