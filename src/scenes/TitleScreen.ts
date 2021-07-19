@@ -7,24 +7,17 @@ export default class TitleScreen extends Phaser.Scene {
     }
 
     preload() {
-        // load data
     }
 
     create() {
-        // create things
-        // Reflect.set(config, "backgroundColor", "#T1T500")
+        this.input.on('pointerdown', this.changeScene);
+    }
+
+    changeScene() {
+        gameMetaData.scene.switch("TitleScreen","TestScene");
     }
     
     update() {
-        // update the frames
-        // let cursors: Phaser.Input.Mouse.MouseManager
-        // if (cursors.onMouseMove) {
-            // setTimeout(function () {
-            //     this.scene.start("TestScene")
-            // }, 400)
-        // } 
-        // this.scene.start("TestScene")
-        config.backgroundColor = "#AWAWAW"
-        this.scene.switch("TestScene")
+        config.backgroundColor = "#AWAWAW";
     }
 }

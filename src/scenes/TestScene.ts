@@ -15,6 +15,12 @@ export default class TestScene extends Phaser.Scene {
         // create things
         config.backgroundColor = "#OWOWOWO";
         this.add.image(120,80,"placehold");
+
+        this.input.on('pointerdown', this.changeScene);
+    }
+
+    changeScene() {
+        gameMetaData.scene.switch("TestScene","TitleScreen");
     }
     
     update() {
