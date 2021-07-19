@@ -1,0 +1,60 @@
+export let map = { "compressionlevel":-1,
+"editorsettings":
+   {
+    "export":
+       {
+        "format":"js"
+       }
+   },
+"height":8,
+"infinite":false,
+"layers":[
+       {
+        "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "height":8,
+        "id":1,
+        "name":"Ground",
+        "opacity":1,
+        "type":"tilelayer",
+        "visible":true,
+        "width":8,
+        "x":0,
+        "y":0
+       }, 
+       {
+        "data":[3, 3, 3, 3, 3, 3, 3, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "height":8,
+        "id":2,
+        "name":"Walls",
+        "opacity":1,
+        "type":"tilelayer",
+        "visible":true,
+        "width":8,
+        "x":0,
+        "y":0
+       }],
+"nextlayerid":3,
+"nextobjectid":1,
+"orientation":"orthogonal",
+"renderorder":"right-down",
+"tiledversion":"1.7.1",
+"tileheight":16,
+"tilesets":[
+       {
+        "columns":2,
+        "firstgid":1,
+        "image":"assets/programmerArtTileset.png",
+        "imageheight":32,
+        "imagewidth":32,
+        "margin":0,
+        "name":"programmerArtTileset",
+        "spacing":0,
+        "tilecount":4,
+        "tileheight":16,
+        "tilewidth":16
+       }],
+"tilewidth":16,
+"type":"map",
+"version":"1.6",
+"width":8
+}

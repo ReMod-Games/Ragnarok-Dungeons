@@ -8,19 +8,23 @@ export default class TestScene extends Phaser.Scene {
 
     preload() {
         // load data
-        this.load.image("placehold","assets/placeholder.png")
     }
 
     create() {
         // create things
         config.backgroundColor = "#OWOWOWO";
-        this.add.image(120,80,"placehold");
+        
+        let testMap = this.make.tilemap({key:"testMap"});
+        let tiles = testMap.addTilesetImage("programmerArtTileset","pgmart");
+
+        testMap.createLayer("Ground",tiles);
+        testMap.createLayer("Walls",tiles);
 
         this.input.on('pointerdown', this.changeScene);
     }
 
     changeScene() {
-        gameMetaData.scene.switch("TestScene","TitleScreen");
+        //gameMetaData.scene.switch("TestScene","TitleScreen");
     }
     
     update() {
