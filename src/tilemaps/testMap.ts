@@ -1,0 +1,49 @@
+export let map = { "compressionlevel":-1,
+"editorsettings":
+   {
+    "export":
+       {
+        "format":"js",
+        "target":"untitled.ts"
+       }
+   },
+"height":8,
+"infinite":false,
+"layers":[
+       {
+        "data":[3, 3, 3, 3, 3, 3, 3, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "height":8,
+        "id":1,
+        "name":"Tile Layer 1",
+        "opacity":1,
+        "type":"tilelayer",
+        "visible":true,
+        "width":8,
+        "x":0,
+        "y":0
+       }],
+"nextlayerid":2,
+"nextobjectid":1,
+"orientation":"orthogonal",
+"renderorder":"right-down",
+"tiledversion":"1.7.1",
+"tileheight":16,
+"tilesets":[
+       {
+        "columns":2,
+        "firstgid":1,
+        "image":"assets/programmerart.png",
+        "imageheight":32,
+        "imagewidth":32,
+        "margin":0,
+        "name":"tile",
+        "spacing":0,
+        "tilecount":4,
+        "tileheight":16,
+        "tilewidth":16
+       }],
+"tilewidth":16,
+"type":"map",
+"version":"1.6",
+"width":8
+}

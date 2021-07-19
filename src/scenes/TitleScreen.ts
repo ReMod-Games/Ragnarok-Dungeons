@@ -1,5 +1,6 @@
 import 'phaser'
 import {gameMetaData, config} from '../RagnarokDungeonsGame';
+import { map } from '../tilemaps/testMap';
 
 export default class TitleScreen extends Phaser.Scene {
     constructor() {
@@ -7,10 +8,13 @@ export default class TitleScreen extends Phaser.Scene {
     }
 
     preload() {
+        this.load.image("placehold","assets/placeholder.png");
+
+        this.load.image("pgmart", "assets/programmerart.png");
+        this.load.tilemapTiledJSON("testMap",map);
     }
 
     create() {
-        this.input.on('pointerdown', this.changeScene);
     }
 
     changeScene() {
@@ -19,5 +23,7 @@ export default class TitleScreen extends Phaser.Scene {
     
     update() {
         config.backgroundColor = "#AWAWAW";
+        
+        this.changeScene();
     }
 }
