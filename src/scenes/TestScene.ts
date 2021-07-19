@@ -1,19 +1,20 @@
 import 'phaser'
-import { config } from '../RagnarokDungeonsGame';
+import {gameMetaData, config} from '../RagnarokDungeonsGame';
 
-export default class TestScene extends Phaser.Scene
-{
+export default class TestScene extends Phaser.Scene {
     constructor() {
         super('TestScene');
     }
 
     preload() {
         // load data
+        this.load.image("placehold","assets/placeholder.png")
     }
 
     create() {
         // create things
-        config.backgroundColor = "#OWOWOWO"
+        config.backgroundColor = "#OWOWOWO";
+        this.add.image(120,80,"placehold");
     }
     
     update() {
