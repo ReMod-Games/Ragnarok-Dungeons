@@ -9,7 +9,7 @@ export default {
 
     //  Our games entry point (edit as required)
     input: [
-        './src/game.ts'
+        './src/RagnarokDungeonsGame.ts'
     ],
 
     //  Where the build file is to be generated.
@@ -62,7 +62,7 @@ export default {
             open: true,
             contentBase: 'dist',
             host: 'localhost',
-            port: 10001,
+            port: 1407,
             headers: {
                 'Access-Control-Allow-Origin': '*'
             }
