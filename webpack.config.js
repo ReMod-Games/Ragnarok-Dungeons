@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: "./src/RagnarokDungeonsGame.ts",
@@ -48,6 +49,11 @@ module.exports = {
         }),
         new HtmlWebPackPlugin({
             title: "Ragnarok Dungeons",
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+              { from: './src/assets', to : 'assets' }
+            ]
         })
     ]
 }

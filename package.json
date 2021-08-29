@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/ReMod-Studios-Games/Ragnarok-Dungeons/#readme",
     "dependencies": {
+        "copy-webpack-plugin": "^9.0.1",
         "css-loader": "^6.2.0",
         "mini-css-extract-plugin": "^2.2.0",
         "phaser": "^3.50.0"
