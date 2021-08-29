@@ -1,6 +1,5 @@
 import 'phaser'
 import {gameMetaData, config} from '../RagnarokDungeonsGame';
-import { map } from '../tilemaps/testMap';
 
 export default class TitleScreen extends Phaser.Scene {
     constructor() {
@@ -11,7 +10,7 @@ export default class TitleScreen extends Phaser.Scene {
         this.load.image("placehold", "assets/placeholder.png");
 
         this.load.image("pgmart", "assets/programmerart.png");
-        this.load.tilemapTiledJSON("testMap",map);
+        this.load.tilemapTiledJSON("testMap", "data/tilemaps/test.tilemap.json");
     }
 
     create() {
