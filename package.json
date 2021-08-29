@@ -21,7 +21,7 @@
     "dependencies": {
         "css-loader": "^6.2.0",
         "mini-css-extract-plugin": "^2.2.0",
-        "phaser": "^3.55.2"
+        "phaser": "^3.50.0"
     },
     "devDependencies": {
         "css-loader": "^6.2.0",
