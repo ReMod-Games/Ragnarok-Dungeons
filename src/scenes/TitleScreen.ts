@@ -1,4 +1,5 @@
 import 'phaser'
+import { TileLoader } from '../dataloaders/TileLoader'
 import { config } from '../RagnarokDungeonsGame'
 import { SceneManager } from './SceneManager'
 
@@ -8,8 +9,7 @@ export default class TitleScreen extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("placehold", "assets/placeholder.png")
-        this.load.image("pgmart", "assets/programmerart.png")
+        TileLoader.dungeon()
         this.load.tilemapTiledJSON("testMap", "data/tilemaps/test.tilemap.json")
     }
 
