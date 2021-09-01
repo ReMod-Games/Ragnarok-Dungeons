@@ -1,9 +1,8 @@
-import { Game } from "phaser";
-import TestScene from "./scenes/TestScene";
-import TitleScreen from "./scenes/TitleScreen";
+import TestScene from "./scenes/TestScene"
+import TitleScreen from "./scenes/TitleScreen"
 
-export var sceneList = [];
-sceneList.push(TitleScreen, TestScene);
+export var sceneList = []
+sceneList.push(TitleScreen, TestScene)
 
 export var config = {
     type: Phaser.AUTO,
@@ -15,10 +14,6 @@ export var config = {
         autoCenter: Phaser.Scale.Center.CENTER_BOTH
     },
     scene: sceneList 
-};
+}
 
-export let gameMetaData: Phaser.Game = new Phaser.Game(config);
-
-setTimeout(()=>{
-    config.backgroundColor = "#OWOWOWO"
-}, 400);
+export let gameMetaData: Phaser.Game = new Phaser.Game(config)
